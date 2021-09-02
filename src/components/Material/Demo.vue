@@ -5,13 +5,14 @@
   </div>
 </template>
 <script lang="ts">
+import { defineComponent } from 'vue';
 import Demo from "../Demo.vue";
 import Demo1 from "./Demo1.vue";
 
-export default {
+export default defineComponent({
   components: { Demo },
   setup() {
     return { Demo1 };
   },
-};
+});
 </script>

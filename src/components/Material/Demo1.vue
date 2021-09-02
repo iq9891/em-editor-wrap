@@ -23,7 +23,7 @@
   </Material>
 </template>
 <script lang="ts">
-import {ref} from "vue";
+import {defineComponent,ref} from "vue";
 import { Material } from "../../lib/index";
 
 const config = {
@@ -37,7 +37,7 @@ const  imageAction = `https://api.dev.mosh.cn/public/material/items`;
 const  fileAction = `https://api.dev.mosh.cn/public/upload/media/uptoken`;
 const  uploadrefresh = `https://api.dev.mosh.cn/public/upload/media/uptoken/refresh`;
 const  actionUpload = `https://api.dev.mosh.cn/public/upload/image/binary`;
-export default {
+export default defineComponent({
   components: { Material },
   setup() {
     const bool = ref('312321');
@@ -68,7 +68,7 @@ export default {
       category_type
     };
   },
-};
+});
 </script>
 
 <style>

@@ -1,7 +1,7 @@
 import {createWebHashHistory, createRouter} from 'vue-router'
 import Home from './views/Home.vue'
 import Doc from './views/Doc.vue'
-import EditorDemo from './components/Editor/EditorDemo.vue'
+// import EditorDemo from './components/Editor/EditorDemo.vue'
 import MaterialDemo from './components/Material/Demo.vue'
 
 import {h} from 'vue'
@@ -25,8 +25,8 @@ const router = createRouter({
             {path:'get-started', component:md(GetStarted)},
             {path:'install', component:md(Install)},
             {path:'intro', component:md(Intro)},
-            {path:'editor', component:EditorDemo},
-            {path:'material', component:MaterialDemo},
+            // {path:'editor', component:EditorDemo},
+            // {path:'material', component:md(MaterialDemo)},
         ]
     }
   ]

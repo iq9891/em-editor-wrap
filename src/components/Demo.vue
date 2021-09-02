@@ -22,10 +22,10 @@
 <script lang="ts">
 import "prismjs";
 import "prismjs/themes/prism.css";
-import { ref } from "vue";
+import { ref, defineComponent } from "vue";
 const Prism = (window as any).Prism;
 
-export default {
+export default defineComponent({
   props: {
     component: {
       type: Object,
@@ -38,7 +38,7 @@ export default {
     const hideCode = () => (codeVisible.value = false);
     return { Prism, codeVisible, showCode, hideCode };
   },
-};
+});
 </script>
 
 <style lang="scss">

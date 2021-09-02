@@ -33,7 +33,7 @@
 </template>
 
 <script lang="ts">
-import {ref, reactive} from "vue";
+import {defineComponent,ref, reactive} from "vue";
 import { Editor } from "../../lib/index";
 
 const config = {
@@ -51,7 +51,7 @@ const  actionUpload = `https://api.dev.mosh.cn/public/upload/image/binary`;
 const headers = {
   'X-Request-Shop-Id': 4,
 }
-export default {
+export default defineComponent({
   components: { Editor },
   setup() {
     const bool = ref('312321');
@@ -82,7 +82,7 @@ export default {
       success
     };
   },
-};
+});
 </script>
 
 <style>
